@@ -12,7 +12,7 @@ public class GradeConverterApp {
 		
 		while (choice.equalsIgnoreCase("y")) {
 			System.out.println();
-			Grade grade = new Grade(Console.getInt("Enter numerical grade: ", 0, 100));
+			Grade grade = new Grade(Console.getInt("Enter numerical grade: ", -1, 101));
 			
 			System.out.println("Letter grade: " + grade.getLetter());
 			System.out.println();
